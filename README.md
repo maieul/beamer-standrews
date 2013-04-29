@@ -1,4 +1,4 @@
 Licence GPL3
 Maïeul Rouquette
 
-Un thème Beamer inspiré de Darmdasdt:
+Un package permettant de mettre en forme un Beamer inspiré du thème Berlin :
