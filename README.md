@@ -6,3 +6,4 @@ Un package permettant de mettre en forme un Beamer inspiré du thème Berlin :
 * Utilise des coins arrondis.
 * Police : Linux Biolinum 0.
 * Barre d'entête, mais ne contenant pas les sous-sections.
+* Propose un environnemennt `\slide` qui produit une frame contenant dans la ligne de titre le titre de sous-section.
