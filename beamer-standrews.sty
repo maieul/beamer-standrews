@@ -12,3 +12,6 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Linux Biolinum O}
 \useoutertheme[subsection=false]{smoothbars}%%% Ligne d'entête
 \newenvironment{slide}{\begin{frame}\frametitle{\insertsubsection}}{\end{frame}}
+\AtBeginSection{
+	\frame{\sectionpage\vspace{1.5ex}\tableofcontents[sectionstyle=hide/hide,hideothersubsections]}
+}
