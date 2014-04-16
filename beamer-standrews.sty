@@ -1,11 +1,18 @@
+\ProvidesPackage{beamer-standrews}
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions {family=@beamerstandrews@,prefix=beamerstandrews@}
+\DeclareBoolOption{nobiblatex}
 \RequirePackage{graphicx,hyperref,csquotes,fontspec,xunicode,polyglossia}
+\ProcessKeyvalOptions*
 
-% Ne pas utiliser les formes abrégées des œuvres 
+% Ne pas utiliser les formes abrégées des œuvres, ne pas charger systèmatiquement biblatex
+\ifbeamerstandrews@nobiblatex
+\else
 \RequirePackage[citestyle=verbose]{biblatex}
 \renewbibmacro*{cite}{%
   \usebibmacro{cite:citepages}%
     {\usebibmacro{cite:full}}}
-
+\fi
 
 \usetheme{Berlin}
 \useinnertheme{rounded}
