@@ -1,4 +1,4 @@
-\ProvidesPackage{beamer-standrews}
+\ProvidesPackage[1.1.0]{beamer-standrews}
 \RequirePackage{kvoptions}
 \SetupKeyvalOptions {family=@beamerstandrews@,prefix=beamerstandrews@}
 \DeclareBoolOption{nobiblatex}
@@ -25,3 +25,8 @@
 \AtBeginSection{
 	\mode<presentation>{\frame{\sectionpage\vspace{1.5ex}\tableofcontents[sectionstyle=hide/hide,hideothersubsections]}}
 }
+
+% Symbole de navigation : on supprime, mais on met numéro de page
+
+\usepackage{bibleref-french}
+\usepackage{philologue/siecles}
